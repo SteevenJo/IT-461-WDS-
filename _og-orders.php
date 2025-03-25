@@ -236,7 +236,7 @@ $result = mysqli_query($conn, $sql);
         <div class="modal-content">
             
             <div id="modal-body">
-                <!-- Order form will be loaded here -->
+                
             </div>
         </div>
     </div>

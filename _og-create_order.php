@@ -42,7 +42,7 @@ if (!$result) {
 $options = "";
 
 while ($row = mysqli_fetch_assoc($result)) {
-    // Build each option tag with price data attribute - make sure price doesn't have $ sign in data-price
+    
     $options .= "<option value='" . $row['id'] . "' data-price='" . $row['price'] . "'>" . 
             htmlspecialchars($row['item_name']) . " (" . $row['price'] . ")</option>";
 }
@@ -283,7 +283,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         totalElement.textContent = '$0.00';
       }
       
-      updateTotal(); // Update subtotal and grand total
+      updateTotal(); 
     }
 
     function updateTotal() {

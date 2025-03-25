@@ -154,7 +154,7 @@ function openOrderModal(customerId) {
                         }
                     });
                 }
-            }, 300); // Small delay ensures modal is fully rendered
+            }, 300); 
         },
         error: function(xhr, status, error) {
             alert("Error loading order form: " + error);
